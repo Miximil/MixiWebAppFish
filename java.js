@@ -1,4 +1,6 @@
+const tg = window.Telegram.WebApp;
 
-function clickButton() {
-    alert("Работает!");
-}
+tg.ready();
+tg.expand();
+
+console.log(tg.initDataUnsafe.user);
